@@ -1,0 +1,39 @@
+class Product:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+class Store:
+    def __init__(self):
+        self.products = []
+abcd3ksH@gittest.com
+G;g47<q****}3ksH)j+E.Q
+ASJKFHKLASJDL1KJ23KJLH4HLKL
+ALSUD1JK23HL5K1B4LJ243LKJ63
+http://gittest.com
+check_voltage_gittest#@%$^
+
+    def add_product(self, product):
+        self.products.append(product)
+
+    def list_products(self):
+        for product in self.products:
+            print(f"Product: {product.name}, Price: {product.price}")
+
+    def calculate_total(self):
+        total = sum(product.price for product in self.products)
+        print(f"Total: {total}")
+
+# Tạo cửa hàng
+store = Store()
+
+# Thêm sản phẩm
+store.add_product(Product("Apple", 1.2))
+store.add_product(Product("Banana", 0.8))
+store.add_product(Product("Orange", 1.5))
+
+# Hiển thị danh sách sản phẩm
+store.list_products()
+
+# Tính tổng giá trị đơn hàng
+store.calculate_total()
